@@ -1,0 +1,43 @@
+{
+  "id": "sinor-osv-concept-001",
+  "name": "Sinor Offshore Explorer",
+  "type": "representative offshore DP support vessel",
+  "certified": false,
+  "dimensionsMeters": {
+    "length": 78,
+    "beam": 20,
+    "depth": 6.5
+  },
+  "coordinates": {
+    "up": "+Y",
+    "bow": "+Z",
+    "starboard": "+X",
+    "unit": "meter"
+  },
+  "compartments": [
+    {
+      "id": "bridge",
+      "interior": true
+    },
+    {
+      "id": "engine-room",
+      "interior": true
+    },
+    {
+      "id": "main-deck",
+      "interior": false
+    }
+  ],
+  "equipmentIds": [
+    "ibs-001",
+    "dp-console-001",
+    "hpr-001",
+    "bow-thruster-001",
+    "deployment-001",
+    "radascan-001",
+    "cyscan-001",
+    "dgps-001",
+    "tautwire-001",
+    "sprintnav-001"
+  ]
+}

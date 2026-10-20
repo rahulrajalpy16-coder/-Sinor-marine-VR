@@ -1,0 +1,149 @@
+{
+  "version": "1.0",
+  "note": "Illustrative, not OEM-verified; model paths are planned assets with procedural fallback.",
+  "equipment": [
+    {
+      "id": "ibs-001",
+      "name": "Integrated Bridge System",
+      "category": "navigation",
+      "location": "bridge",
+      "model": "/models/ibs-console.glb",
+      "simulation": null,
+      "actions": [
+        "inspect"
+      ],
+      "manufacturer": null
+    },
+    {
+      "id": "dp-console-001",
+      "name": "DP System",
+      "category": "dynamic-positioning",
+      "location": "bridge",
+      "model": "/models/dp-console.glb",
+      "simulation": "dp-3dof",
+      "actions": [
+        "inspect",
+        "simulate",
+        "reset"
+      ],
+      "manufacturer": null
+    },
+    {
+      "id": "hpr-001",
+      "name": "HPR \u00b7 HPT 5000 USBL",
+      "category": "position-reference",
+      "location": "underwater-hull",
+      "model": "/models/hpt5000.glb",
+      "simulation": "acoustic-ranging",
+      "actions": [
+        "inspect",
+        "show-signals",
+        "reset"
+      ],
+      "manufacturer": "Sonardyne"
+    },
+    {
+      "id": "bow-thruster-001",
+      "name": "Bow Tunnel Thruster",
+      "category": "propulsion",
+      "location": "bow",
+      "model": "/models/bow-thruster.glb",
+      "simulation": "tunnel-thruster",
+      "actions": [
+        "inspect",
+        "set-thrust",
+        "stop",
+        "reset"
+      ],
+      "manufacturer": null
+    },
+    {
+      "id": "deployment-001",
+      "name": "Type 7950 Deployment Machine",
+      "category": "mechanical",
+      "location": "hull-trunk",
+      "model": "/models/type7950.glb",
+      "simulation": "deployment-state-machine",
+      "actions": [
+        "inspect",
+        "deploy",
+        "retract",
+        "pause",
+        "reset"
+      ],
+      "manufacturer": "Sonardyne"
+    },
+    {
+      "id": "radascan-001",
+      "name": "RadaScan View \u00b7 Radar",
+      "category": "position-reference",
+      "location": "bridge-top",
+      "model": "/models/radascan.glb",
+      "simulation": "radar-ranging",
+      "actions": [
+        "inspect",
+        "simulate",
+        "reset"
+      ],
+      "manufacturer": "Guidance Marine"
+    },
+    {
+      "id": "cyscan-001",
+      "name": "CyScan AS \u00b7 Laser",
+      "category": "position-reference",
+      "location": "bridge-top",
+      "model": "/models/cyscan.glb",
+      "simulation": "laser-ranging",
+      "actions": [
+        "inspect",
+        "simulate",
+        "reset"
+      ],
+      "manufacturer": "Guidance Marine"
+    },
+    {
+      "id": "dgps-001",
+      "name": "DGPS \u00b7 Fugro Seastar 9410-AUT",
+      "category": "position-reference",
+      "location": "mast",
+      "model": "/models/seastar-antennas.glb",
+      "simulation": "gnss",
+      "actions": [
+        "inspect"
+      ],
+      "manufacturer": "Fugro"
+    },
+    {
+      "id": "tautwire-001",
+      "name": "Taut Wire \u00b7 SMT TW 2.0 Z Mk2",
+      "category": "position-reference",
+      "location": "main-deck",
+      "model": "/models/smt-tw2.glb",
+      "simulation": "taut-wire",
+      "actions": [
+        "inspect",
+        "deploy",
+        "retract",
+        "stop",
+        "reset"
+      ],
+      "manufacturer": "SMT"
+    },
+    {
+      "id": "sprintnav-001",
+      "name": "SPRINT-Nav DP \u00b7 Over-the-side pole",
+      "category": "position-reference",
+      "location": "hull-side",
+      "model": "/models/sprintnav-8097.glb",
+      "simulation": "ins-dvl",
+      "actions": [
+        "inspect",
+        "deploy",
+        "retract",
+        "stop",
+        "reset"
+      ],
+      "manufacturer": "Sonardyne"
+    }
+  ]
+}
